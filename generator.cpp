@@ -3,12 +3,6 @@
 #include <string>
 #include <ctime>
 using namespace std;
-/*
-    Password needs to be 14 characters long
-    Needs to have uppercase and lowercase letters
-    Needs to have one number
-    And one symbol
-*/
 void passwordGenerator(){
     srand(time(NULL));
     char lowercase[26] = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
