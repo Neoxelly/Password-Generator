@@ -15,11 +15,10 @@ void passwordGenerator(){
     char uppercase[26] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
     char rString1[12];
     char rString2[12];
-    int number = rand() % 2 + 1;
-    string numberForPassword = to_string(number);
+    int number = rand() % 99 + 1;
 
-    char symbols[] = {'!', '~', '@', '#', '$', '%', '^', '&', '*', '(', ')', '_', '-', '+', '=', '{', '[', '}', ']', '|', ':', ';', '<', '>', '.', '?', '/'};
-    char symbolForPassword;
+    //char symbols[] = {'!', '~', '@', '#', '$', '%', '^', '&', '*', '(', ')', '_', '-', '+', '=', '{', '[', '}', ']', '|', ':', ';', '<', '>', '.', '?', '/'};
+
     int i(0);
     while(i<12){
         int temp1 = rand() % 26;
@@ -35,6 +34,7 @@ void passwordGenerator(){
         password.append(string(&rString2[i], 1));
     }
     cout<<password;
+    cout<<number;
 }
 int main(){
     cout<<"Generated Password:\n";
