@@ -18,7 +18,6 @@ void passwordGenerator(){
         rString2[i] = uppercase[temp2];
         i++;
     }
-    int br(0);
     string password = "";
     for(int i = 1; i <= 12; i++){
         password.append(string(&rString1[i], 1));
